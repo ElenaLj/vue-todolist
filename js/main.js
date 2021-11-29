@@ -35,6 +35,14 @@ const app = new Vue({
         },
         addToDo: function(){
             this.array.push({text: this.newInput});
+        },
+        toggleDone: function(){
+            if(this.array.done == true){
+                console.log(this);
+                return false;
+            } else {
+                return true;
+            }
         }
     },
 });

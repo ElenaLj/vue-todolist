@@ -26,14 +26,14 @@
             <!-- corpo pagina -->
             <main>
                 <!-- sezione input -->
-                <input type="text" placeholder="Inserisci una nuova voce" v-model="newInput">
+                <input type="text" placeholder="Inserisci una nuova voce" v-model="newInput" v-on:keyup.enter="addToDo()">
                 <button @click="addToDo()">Aggiungi</button>
                 <!-- /sezione input -->
 
                 <div class="todos">
                     <ul>
                         <li v-for="(item, index) in array" v-bind:class="item.done == true ? 'done' : '' ">
-                            <span>{{item.text}}</span>
+                            <span @click="toggleDone()">{{item.text}}</span>
                             <i class="fas fa-times" @click="removeTodo(index)"></i>
                         </li>
                     </ul>
