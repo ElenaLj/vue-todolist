@@ -26,7 +26,7 @@ const app = new Vue({
             text: "Chiamare la mamma",
             done: false,
            },
-       ], 
+       ],
     },
     methods: {
 

@@ -56,3 +56,7 @@ main .todos {
 .todos ul li:last-child {
     border: none;
 }
+
+.done {
+    text-decoration: line-through;
+}
