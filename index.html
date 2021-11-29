@@ -27,8 +27,8 @@
             <main>
                 <div class="todos">
                     <ul>
-                        <li>
-                            <span>Fare la spesa</span>
+                        <li v-for="todo in array">
+                            <span>{{todo.text}}</span>
                             <i class="fas fa-times"></i>
                         </li>
                     </ul>
