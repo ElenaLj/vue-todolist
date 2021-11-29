@@ -1,0 +1,58 @@
+/* *** commons *** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inconsolata', monospace;
+    background-color: #864879;
+    color: #E9A6A5;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* intestazione */
+header {
+    padding: 30px 0; 
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h1::before {
+    content: "\f46c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 20px;
+}
+
+/* corpo pagina */
+main .todos {
+    background-color: #3F3251;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.todos ul {
+    list-style: none;
+}
+
+.todos ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #1F1D36;
+    font-size: 18px;
+}
+
+.todos ul li:last-child {
+    border: none;
+}
