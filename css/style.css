@@ -6,6 +6,7 @@
 }
 
 body {
+    font-size: 18px;
     font-family: 'Inconsolata', monospace;
     background-color: #864879;
     color: #E9A6A5;
@@ -34,6 +35,27 @@ h1::before {
 }
 
 /* corpo pagina */
+.addelement {
+    margin: 25px 0;
+    text-align: center;
+}
+
+input, button {
+    width: 250px;
+    padding: 10px;
+    font-size: inherit;
+    font-family: 'Inconsolata', monospace;
+    background-color: #E9A6A5;
+    border: none;
+    border: 1px solid #3F3251;
+    border-radius: 10px;
+}
+
+button {
+    color: #E9A6A5;
+    background-color: #3F3251;
+}
+
 main .todos {
     background-color: #3F3251;
     padding: 20px;
@@ -50,13 +72,13 @@ main .todos {
     align-items: center;
     padding: 10px 0;
     border-bottom: 1px solid #1F1D36;
-    font-size: 18px;
 }
 
 .todos ul li:last-child {
     border: none;
 }
 
+/*  classe azionata da vue.js */
 .done {
     text-decoration: line-through;
 }
