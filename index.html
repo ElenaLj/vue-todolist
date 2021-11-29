@@ -29,7 +29,7 @@
                     <ul>
                         <li v-for="(item, index) in array" v-bind:class="item.done == true ? 'done' : '' ">
                             <span>{{item.text}}</span>
-                            <i class="fas fa-times"></i>
+                            <i class="fas fa-times" @click="removeTodo(index)"></i>
                         </li>
                     </ul>
                 </div>

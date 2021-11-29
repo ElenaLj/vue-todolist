@@ -29,6 +29,8 @@ const app = new Vue({
        ],
     },
     methods: {
-
+        removeTodo: function(index){
+            this.array.splice(index, 1);
+        }
     },
 });
