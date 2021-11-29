@@ -27,10 +27,14 @@ const app = new Vue({
             done: false,
            },
        ],
+       newInput: "",
     },
     methods: {
         removeTodo: function(index){
             this.array.splice(index, 1);
+        },
+        addToDo: function(){
+            this.array.push({text: this.newInput});
         }
     },
 });
