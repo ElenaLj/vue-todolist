@@ -38,11 +38,15 @@ const app = new Vue({
         },
         toggleDone: function(index){
             console.log(this.array[index]);
-            if(this.array[index].done == true){
-                this.array[index].done = false;
-            } else {
-                this.array[index].done = true;
-            }
+
+            // if(this.array[index].done == true){
+            //     this.array[index].done = false;
+            // } else {
+            //     this.array[index].done = true;
+            // }
+
+            //oppure meglio così
+            this.array[index].done = !this.array[index].done
         }
     },
 });
