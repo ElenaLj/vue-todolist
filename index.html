@@ -33,12 +33,13 @@
                 <!-- /sezione input -->
 
                 <div class="todos">
-                    <ul>
+                    <ul v-if="array.length > 0">
                         <li v-for="(item, index) in array" v-bind:class="item.done == true ? 'done' : '' ">
-                            <span @click="toggleDone()">{{item.text}}</span>
+                            <span @click="toggleDone(index)">{{item.text}}</span>
                             <i class="fas fa-times" @click="removeTodo(index)"></i>
                         </li>
                     </ul>
+                    <h3 v-else>Hai completato tutte le tasks di oggi!</h3>
                 </div>
             </main>
             <!-- /corpo pagina -->

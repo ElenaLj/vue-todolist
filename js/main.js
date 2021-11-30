@@ -34,14 +34,14 @@ const app = new Vue({
             this.array.splice(index, 1);
         },
         addToDo: function(){
-            this.array.push({text: this.newInput});
+            this.array.push({text: this.newInput, done: false})
         },
-        toggleDone: function(){
-            if(this.array.done == true){
-                console.log(this);
-                return false;
+        toggleDone: function(index){
+            console.log(this.array[index]);
+            if(this.array[index].done == true){
+                this.array[index].done = false;
             } else {
-                return true;
+                this.array[index].done = true;
             }
         }
     },
